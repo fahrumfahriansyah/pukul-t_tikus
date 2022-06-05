@@ -1,0 +1,109 @@
+* {
+    cursor: url(../photo/palu1.png), auto;
+
+}
+
+*:active {
+    cursor: url(../photo/palu2.png), auto;
+}
+
+body {
+    background-color: antiquewhite;
+}
+
+.button {
+    width: 200px;
+    color: red;
+    float: left;
+    font-size: 30px;
+}
+
+.judul {
+    width: 500px;
+    background-color: salmon;
+    cursor: pointer;
+}
+
+h1 {
+    font-size: 60px;
+    color: red;
+}
+
+.judul {
+    margin: 60px auto;
+    text-align: center;
+}
+
+.container {
+    width: 600px;
+    margin: 100px auto;
+    transition: 3s;
+}
+
+.contain {
+    width: 600px;
+    margin: 100px auto;
+    animation: muncul 10s infinite 1s;
+}
+
+.muncul {
+    background-image: url(../photo/tanahh.png);
+}
+
+.tanah {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: url(../photo/tanahh.png);
+    background-repeat: no-repeat;
+}
+
+.tanah ::after {
+    content: '';
+    display: block;
+    width: 200px;
+
+}
+
+.tikus {
+    float: left;
+    width: 200px;
+    height: 200px;
+    background: url(../photo/tikus.png);
+    background-repeat: no-repeat;
+}
+
+.skor {
+    text-align: center;
+    font-size: 60px;
+}
+
+@keyframes muncul {
+    0% {
+        margin-left: 300px;
+    }
+
+    20% {
+        margin-right: 400px;
+    }
+
+    30% {
+        margin-left: 500px;
+        transform: rotate(5deg);
+    }
+
+    50% {
+        margin-top: 300px;
+        transform: rotate(-5deg);
+    }
+
+    70% {
+        margin-bottom: 300 px;
+        opacity: 0.4;
+    }
+
+    100% {
+        margin-right: 500px;
+        opacity: 1;
+    }
+}
